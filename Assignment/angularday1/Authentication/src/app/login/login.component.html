@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-header>
+      <h1>Natwest Bank - User Login</h1>
+  </mat-card-header>
+  <form class="example-form" [formGroup]="loginForm" (ngSubmit)="proceedLogin()">
+      <mat-form-field class="example-full-width">
+          <mat-label>Id</mat-label>
+          <input matInput placeholder="Enter your Id..." formControlName="id">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Enter your Password..." formControlName="password">
+      </mat-form-field>
+      <div class="example-button-row">
+          <button mat-raised-button color="primary">Login</button>
+          <a routerLink="\register" mat-raised-button="accents">Are you a new user?</a>
+      </div>
+  </form>
+  &nbsp;
+</mat-card>

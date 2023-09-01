@@ -1,0 +1,36 @@
+{
+  "user": [
+    {
+      "id": "fgsef",
+      "name": "rwefgrgf",
+      "password": "Abcd@123",
+      "email": "wfsv@gmail.com",
+      "gender": "male",
+      "isactive": false
+    },
+    {
+      "id": "12345",
+      "name": "abcde",
+      "password": "Abcd@123",
+      "email": "abcd@gmail.com",
+      "gender": "male",
+      "isactive": true
+    },
+    {
+      "id": "qddaws",
+      "name": "dsssssvfds",
+      "password": "Abcd@123",
+      "email": "fgrqwrqw@gmail.com",
+      "gender": "male",
+      "isactive": false
+    },
+    {
+      "id": "bq5y3q",
+      "name": "qb35yb3yq",
+      "password": "Abcd@123",
+      "email": "crgqwegwe@mail.com",
+      "gender": "male",
+      "isactive": false
+    }
+  ]
+}

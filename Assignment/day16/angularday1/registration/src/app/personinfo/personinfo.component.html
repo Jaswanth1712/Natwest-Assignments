@@ -1,0 +1,92 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div style="text-align: center">
+  <h1>{{message}}</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <fieldset>
+          <legend class="text-center">Valid information is required to register. <span class="req"><small>
+                required *</small></span></legend>
+          <!-- first name -->
+          <div class="form-group">
+            <label for="firstname"><span class="req">* </span> First Name: <small>This will be your login
+                username</small> </label>
+            <input required type="text" [(ngModel)]="user.firstname" name="firstname" id="firstname"
+              class="form-control phone" maxlength="28" placeholder="Enter your first name..." />
+          </div>
+          <!-- middle name -->
+          <div class="form-group">
+            <label for="middlename"><span class="req">* </span> Middle Name:</label>
+            <input required type="text" [(ngModel)]="user.middlename" name="middlename" id="middlename"
+              class="form-control phone" maxlength="28" placeholder="Enter your middle name..." />
+          </div>
+          <!-- last name -->
+          <div class="form-group">
+            <label for="lastname"><span class="req">* </span> Last Name:</label>
+            <input required type="text" [(ngModel)]="user.lastname" name="lastname" id="lastname"
+              class="form-control phone" maxlength="28" placeholder="Enter your last name..." />
+          </div>
+          <!-- father's name -->
+          <div class="form-group">
+            <label for="fathername"><span class="req">* </span> Father's Name:</label>
+            <input required type="text" [(ngModel)]="user.fathername" name="fathername" id="fathername"
+              class="form-control phone" maxlength="28" placeholder="Enter your father's name..." />
+          </div>
+          <!-- mobile number -->
+          <div class="form-group">
+            <label for="mobilenumber"><span class="req">* </span> Mobile number:</label>
+            <input required type="text" [(ngModel)]="user.mobilenumber" name="mobilenumber" id="mobilenumber"
+              class="form-control phone" maxlength="12" placeholder="Enter your mobile number..." />
+          </div>
+          <!-- email id -->
+          <div class="form-group">
+            <label for="emailid"><span class="req">* </span> Email ID:</label>
+            <input required type="text" [(ngModel)]="user.emailid" name="emailid" id="emailid"
+              class="form-control phone" maxlength="28" placeholder="Enter your email ID..." />
+          </div>
+          <!-- Aadharcardnumber -->
+          <div class="form-group">
+            <label for="Aadharcardnumber"><span class="req">* </span> Aadhar card Number:</label>
+            <input required type="text" [(ngModel)]="user.Aadharcardnumber" name="Aadharcardnumber"
+              id="Aadharcardnumber" class="form-control phone" maxlength="12"
+              placeholder="Enter your aadhar number..." />
+          </div>
+          <!-- dateofbirth -->
+          <div class="form-group">
+            <label for="dateofbirth"><span class="req">* </span> Date of Birth:</label>
+            <input required type="text" [(ngModel)]="user.dateofbirth" name="dateofbirth" id="dateofbirth"
+              class="form-control phone" maxlength="12" placeholder="Enter your Date of Birth..." />
+          </div>
+          <!-- occupation -->
+          <div class="form-group">
+            <label for="occupation"><span class="req">* </span> Occupation:</label>
+            <input required type="text" [(ngModel)]="user.occupation" name="occupation" id="occupation"
+              class="form-control phone" maxlength="28" placeholder="Enter your Occupation..." />
+          </div>
+          <!-- address -->
+          <div class="form-group">
+            <label for="address"><span class="req">* </span> Address:</label>
+            <input required type="text" [(ngModel)]="user.address" name="address" id="address"
+              class="form-control phone" maxlength="48" placeholder="Enter your address..." />
+          </div>
+          <!-- photo -->
+          <div class="form-group">
+            <label for="photo"><span class="req">* </span> Photo:</label>
+            <input required type="text" [(ngModel)]="user.photo" name="photo" id="photo" class="form-control phone"
+              maxlength="200" placeholder="Enter your photo link..." />
+          </div>
+          <div class="status" id="status"></div>
+          <div class="form-group">
+            <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerNow()">
+          </div>
+        </fieldset>
+      </form><!-- ends register form -->
+      <!-- second for to fiter user-->
+    </div><!-- ends col-6 -->
+  </div>
+</div>
